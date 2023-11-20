@@ -1,0 +1,244 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+body,
+.c-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  /* background-color: rebeccapurple; */
+}
+nav {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-image: linear-gradient(to right, white, green);
+}
+.logo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 40%;
+  height: 100%;
+  margin-left: 20px;
+  cursor: cell;
+}
+
+.items {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.items a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(5, 66, 66);
+}
+.menu-button {
+  font-size: 20px;
+  padding: 10px;
+  color: blue;
+  border-radius: 40%;
+  display: none;
+}
+.items a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.main-contact {
+  width: 100%;
+  height: 40vh;
+  margin-top: 7%;
+  text-align: center;
+}
+.main-contact:hover {
+  box-shadow: 0px 0px 5px green;
+}
+
+.heading {
+  font-size: 50px;
+  color: blue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 1px 2px 2px green;
+  text-transform: uppercase;
+}
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+.carsual-seaction {
+  width: 100%;
+  height: 90vh;
+  /* border: 3px solid black; */
+}
+.carsual-seaction h2 {
+  text-align: center;
+  padding: 10px;
+  color: black;
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 1px 2px 2px green;
+  text-transform: uppercase;
+}
+.carsual-img {
+  width: 100% !important;
+  height: 540px !important;
+}
+.psl-section {
+  width: 100%;
+  /* height: 80vh; */
+  margin-top: 20px;
+  padding: 19px;
+}
+.psl-section h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  font-style: italic;
+}
+.psl-section h4 {
+  text-align: center;
+  color: cadetblue;
+  font-size: 37px;
+  font-weight: 570;
+}
+.c-card-img {
+  width: 100% !important;
+  height: 70% !important;
+}
+.card-title {
+  color: blue !important;
+  font-weight: 400;
+  font-size: 35px;
+}
+.card-text {
+  font-size: 20px;
+}
+.card:hover {
+  box-shadow: 0px 0px 5px red;
+  color: darkred;
+}
+.shop-pcb {
+  width: 100%;
+  height: 70vh;
+  background-image: url("./assets/images/pcb-shop.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-pcb-link {
+  color: honeydew;
+  font-size: 25px;
+  font-weight: 700;
+}
+.shop-pcb-link:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+@media (max-width: 680px) {
+  nav {
+    background-image: none;
+    background-color: gray;
+  }
+  .items a {
+    display: none;
+  }
+  .logo img {
+    width: 50%;
+    height: 100%;
+  }
+  .menu-button {
+    font-size: 20px;
+    padding: 10px;
+    color: green;
+    background-color: wheat;
+    border-radius: 50%;
+    display: block;
+  }
+  .heading {
+    font-size: 30px;
+    color: black;
+    text-transform: capitalize;
+  }
+  .text {
+    font-size: 25px;
+    padding: 10px;
+    line-height: normal;
+    text-align: justify;
+  }
+  .main-contact {
+    width: 100%;
+    height: auto;
+  }
+  .carsual-seaction h2 {
+    text-align: center;
+    padding: 7px;
+    color: blue;
+    font-size: 40px;
+    text-shadow: 1px 2px 2px green;
+    text-transform: uppercase;
+  }
+  .carsual-img {
+    width: 100% !important;
+    height: 530px !important;
+  }
+  .carsual-seaction {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+  }
+  .psl-section h4 {
+    text-align: center;
+    color: cadetblue;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .psl-section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+  }
+  .c-card-img {
+    width: auto !important;
+    height: auto !important;
+  }
+  .card-title {
+    color: black !important;
+    font-weight: 350;
+    font-size: 29px;
+  }
+  .card-text {
+    font-size: 19px;
+  }
+  .shop-pcb {
+    width: auto;
+    height: 50%;
+  }
+  .shop-pcb-link {
+    color: honeydew;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
